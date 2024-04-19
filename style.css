@@ -64,7 +64,8 @@ body {
 	
 }
 
-.top {
+.x,
+.c {
 	display: flex;
 	width: 65px;
 	height: 35px;
@@ -108,7 +109,9 @@ body {
 
 .operator:hover,
 .number:hover,
-.top:hover {
+.x:hover,
+.c:hover {
 	background-color: black;
 	color: white;
+	cursor: pointer;
 }
