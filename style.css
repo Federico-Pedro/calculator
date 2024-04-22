@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
 *{
-	font-weight: bold;
-	/* border: 1px solid red; */
+	font-weight:600;
+	margin:0;
+	padding: 0;
+	/* border: 1px solid red;  */
 }
 
 body {
 	display: flex;
 	justify-content: center;
 	padding: 20px;
+	background-image: url("back.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	/* background-color: #060117; */
 }
 .container {
 	display: flex;
@@ -14,12 +22,13 @@ body {
 	padding: 5px;
 	width: 300px;
 	margin: 20 px auto auto auto;
-	border: 1px solid black;
+	border: 3px solid #a7cb05;
 	border-radius: 10px 5px;
-}
-
+	background-color: #060117ee;
+	
+}	
 .display {
-	width: 80%;
+	width: 80%; 
 	height: 50px;
 	padding: 10px;
 	margin: 15px auto;
@@ -27,12 +36,18 @@ body {
 	justify-content: flex-end;
 	align-items: flex-end;
 	border-radius: 10px;
-	border: 1px solid black;
-	font-family: arial;
+	border: 1px solid rgb(231, 231, 231);
+	font-family: "Oxanium", sans-serif;
 	font-size: 20px;
 	font-weight: bold;
+	color: #e7e700;
+	box-shadow: 1px 1px 10px 5px rgb(138, 0, 197);
 }
 
+.panel {
+	display: flex;
+	flex-direction: column;
+}
 .number-container {
 	width: 200px;
 	height: 225px;
@@ -51,7 +66,10 @@ body {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid black;
+	border: 1px solid rgb(231, 231, 231);
+	color: magenta;
+	box-shadow: 1px 1px 5px 5px cyan;
+	font-family: "Oxanium", sans-serif;
 	
 }
 
@@ -60,21 +78,29 @@ body {
 	width: auto;
 	display: flex;
 	justify-content: flex-end;
+	gap: 10px;
 	
 	
 }
 
+.x {
+	margin-right: 12px;
+	
+}
 .x,
 .c {
 	display: flex;
-	width: 65px;
+	width: 50px;
 	height: 35px;
-	border-radius: 10px;
+	border-radius: 50px;
 	align-items: center;
 	justify-content: center;
-	margin-right: 7px;
+	/* margin-right: 7px; */
 	margin-top: 7px;
-	border: 1px solid black;
+	border: 1px solid rgb(231, 231, 231);
+	color: magenta;
+	box-shadow: 1px 1px 5px 5px cyan;
+	font-family: "Oxanium", sans-serif;
 }
 
 .secondary-container {
@@ -102,7 +128,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	border: 1px solid black;
+	border: 1px solid rgb(231, 231, 231);
+	box-shadow: 1px 1px 5px 5px cyan;
+	color: magenta;
+	font-family: "Oxanium", sans-serif;
 	
 }
 
@@ -111,7 +140,8 @@ body {
 .number:hover,
 .x:hover,
 .c:hover {
-	background-color: black;
-	color: white;
+	background-color: #06011714;
+	color: rgb(255, 0, 136);
 	cursor: pointer;
+	box-shadow: 1px 1px 2px 2px cyan;
 }
