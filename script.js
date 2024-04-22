@@ -56,8 +56,13 @@ function cut(input){
 
 equal.addEventListener('click',() => {
     result = eval(input);
+    if (result === Infinity){
+        display.innerHTML = 'ERROR!';
+    }else {
     display.innerHTML = result;
-    input = result; 
+    }
+    input = result;
+    
 })
 
 function clear(){
