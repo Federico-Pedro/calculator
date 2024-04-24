@@ -13,7 +13,7 @@ body {
 	padding: 20px;
 	background-image: url("back.jpg");
 	background-size:cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	/* background-color: #060117; */
 }
 .container {
