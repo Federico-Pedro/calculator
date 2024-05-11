@@ -14,14 +14,14 @@ body {
 	background-image: url("back.jpg");
 	background-size:cover;
 	background-repeat: repeat-y;
-	/* background-color: #060117; */
+	background-color: #060117;
 }
 .container {
 	display: flex;
 	flex-direction: column;
 	padding: 5px;
 	width: 300px;
-	margin: 20 px auto auto auto;
+	margin: 15% auto;
 	border: 3px solid #a7cb05;
 	border-radius: 10px 5px;
 	background-color: #060117ee;
@@ -145,3 +145,37 @@ body {
 	cursor: pointer;
 	box-shadow: 1px 1px 2px 2px cyan;
 }
+
+
+/*Modal joke*/
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin: 5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	/* border: 1px solid #242424; */
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .mia {
+	width: 500px;
+	height: auto;
+  }
