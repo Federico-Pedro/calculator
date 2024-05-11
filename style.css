@@ -161,6 +161,7 @@ body {
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+	overflow: hidden;
   }
   
   /* Modal Content/Box */
@@ -176,6 +177,7 @@ body {
   }
 
   .mia {
-	width: 500px;
-	height: auto;
+	width: auto;
+	height: 750px;
+	overflow: hidden;
   }
