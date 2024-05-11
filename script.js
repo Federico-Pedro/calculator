@@ -3,6 +3,7 @@ const keys = document.querySelectorAll(".btn");
 const c = document.querySelector(".c");
 const x = document.querySelector(".x");
 const equal = document.querySelector(".equal");
+const modal = document.getElementById("myModal");
 let input = "";
 let result = "";
 
@@ -27,7 +28,9 @@ x.addEventListener('click', () => {
 equal.addEventListener('click',() => {
     result = eval(input);
     if (result === Infinity){
-        display.innerHTML = 'ERROR!';
+      modal.style.display = "block";
+      display.innerHTML = result;
+      input = result;
     }else {
     display.innerHTML = result;
     }
@@ -39,3 +42,12 @@ function clear(){
     display.innerHTML = '';
     input = '';
 };
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
